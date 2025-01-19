@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Contact info">
+        
+            <template lwc:if={accountInfo}>
+                <div class="slds-var-p-around_small">
+                    <p>Account NAme : {accountInfo.apiName}</p>
+                    <p>Account FirstName : {accountInfo.fields.Name.label}</p>
+                </div>
+            </template>
+            <div class="slds-var-p-around_small">
+                <template for:each={accountInfo.childRelationships} for:item="rel">
+                    <p key={rel.fieldName}>'Account name ':{rel.fieldName}</p>
+                </template>
+            </div>
+            
+        
+    </lightning-card>
+</template>

@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Load Premitive array" icon-name="custom:custom14">
+        <div class="slds-p-around_small">
+            <template for:each={superstars} for:item="star">
+                <p key={star}>{star}</p>
+            </template>
+        </div>
+
+        <div class="slds-p-around_small">
+            <template for:each={Friends} for:item="fs">
+                <p  key={fs}>{fs}</p>
+            </template>
+        </div>
+
+        <div class="slds-p-around_small">
+            <template for:each={mylist} for:item="list1">
+                <p  key={list1.id}>{list1.firstName} {list1.lastName}</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>

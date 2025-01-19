@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title=" 'Advance calculator" icon-name="standard:assignment">
+        <div class="slds-p-around_medium">
+            <lightning-input name="number1" label="Number 1"  placeholder="type here..." onchange= {changeHandler}></lightning-input>
+            <lightning-input name="number2" label="Number 2" placeholder="type here..." onchange= {changeHandler}></lightning-input>
+        </div>
+
+        <div class="slds-p-around_medium">
+            <lightning-button variant="brand-outline" label="Add" title="Addition" class="slds-var-p-around_medium" onclick={calculateResult}></lightning-button>
+            <lightning-button variant="brand-outline" label="Sub" title="Substartction" class="slds-var-p-around_medium" onclick={calculateResult}></lightning-button>
+            <lightning-button variant="brand-outline" label="Mul" title="Multiplication" class="slds-var-p-around_medium" onclick={calculateResult}></lightning-button>
+            <lightning-button variant="brand-outline" label="Div" title="Divison" class="slds-var-p-around_medium" onclick={calculateResult}></lightning-button>
+        </div>
+
+        <div>
+            <p>Output : {result}</p>
+        </div>
+
+    </lightning-card>
+</template>

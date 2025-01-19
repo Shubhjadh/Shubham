@@ -1,0 +1,7 @@
+<template>
+    <lightning-card title="Opportunity Information">
+        <template for:each= {output.results} for:item="output">
+            <p key={output.result.id}> {output.result.fields.Name.value}</p>
+        </template>
+    </lightning-card>
+</template>

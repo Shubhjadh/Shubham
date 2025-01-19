@@ -1,0 +1,51 @@
+<template>
+    <lightning-card title="Calculator" icon-name="custom:custom14">
+        <div class="slds-p-around_small">
+            <lightning-input name="input1" label="Text field with a placeholder" placeholder="type here..." onchange={changeHandlerNumber1} value={numberone}></lightning-input>
+            <lightning-input name="input2" label="Text field with a placeholder" placeholder="type here..." onchange={changeHandlerNumber2} value={numbertwo}></lightning-input>
+
+        </div>
+
+        <div class="slds-p-around_small">
+            <lightning-button 
+            variant="brand"
+             label="Add"
+              title="Brand action" 
+              class="slds-p-around_small"
+              onclick={addHandler}
+              ></lightning-button>
+
+            <lightning-button 
+            variant="brand"
+             label="Sub"
+              title="Brand action" 
+              class="slds-p-around_small"
+              onclick={subHandler}
+              ></lightning-button>
+
+            <lightning-button 
+            variant="brand" 
+            label="Mul" 
+            title="Brand action" 
+            class="slds-p-around_small"
+            onclick={mulHandler}
+            ></lightning-button>
+
+            <lightning-button 
+            variant="brand" 
+            label="Div" 
+            title="Brand action" 
+            class="slds-p-around_small"
+            onclick={divHandler}
+            ></lightning-button>
+        </div>
+
+        <div class="slds-p-around_small">
+            <p>Output : {result}</p>
+        </div>
+
+        <lightning-button
+             label="Reset" onclick={resetInput}>
+        </lightning-button>
+    </lightning-card>
+</template>

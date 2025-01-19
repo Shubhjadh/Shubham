@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Full Name" icon-name="standard:user">
+        <div class="slds-p-around_small">
+            <lightning-input name="FName" label="First Name" placeholder="type here..." class="slds-p-around_x-small" onchange= {changeHandler1}></lightning-input>
+            <lightning-input name="LName" label="Last Name" placeholder="type here..." class="slds-p-around_x-small" onchange= {changeHandler2}></lightning-input>
+        </div>
+        
+        <div>
+            <lightning-button 
+                variant="destructive"
+                label="Destructive" 
+                title="Destructive action" 
+                onclick={handleClick} 
+                class="slds-m-left_x-small">
+            </lightning-button>
+        </div>
+
+        <div class="slds-p-around_small">
+            <p>OutPut : {result}</p>
+        </div>
+    </lightning-card>
+</template>
