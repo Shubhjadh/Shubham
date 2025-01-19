@@ -574,7 +574,7 @@ public static void updatedRelatedOppPhone(list<Account> Acc,map<Id,Account> oldm
             {
                 for(Contact Conlist : Con1)
                 {
-                    
+                    //
                 }
             }
         }
